@@ -9,17 +9,22 @@ import { canvas, rightarrow } from "@/assests/assests";
 
 const Dashboard: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "#FDFAF2" }} className="flex h-[1211px]">
-      <Sidebar />
+    <div
+      style={{ backgroundColor: "#FDFAF2" }}
+      className="flex flex-col md:flex-row h-auto min-h-screen"
+    >
+      <div className="hidden md:block">
+        <Sidebar />
+      </div>
       <div className="flex-1">
         <Navbar />
-        <div className="flex gap-6 mt-6">
-          <div className="flex-1 ">
+        <div className="flex flex-col md:flex-row gap-6 mt-6">
+          <div className="flex-1 order-2 md:order-1">
             <SalesTrend />
             <ProductionLine />
             <RecentOrders />
           </div>
-          <div className="relative h-[727px]">
+          <div className="relative h-80 md:h-[727px] order-1 md:order-2">
             <Image
               className="w-full h-full object-cover"
               src={canvas}
@@ -27,7 +32,7 @@ const Dashboard: React.FC = () => {
             />
             <button className="absolute bottom-14 left-4 flex bg-blue-800 text-white w-36 pl-2 text-sm h-[44px] items-center gap-2 rounded-lg">
               <p>Launch designer</p>
-              <Image className="" src={rightarrow} alt="canvas" />
+              <Image src={rightarrow} alt="canvas" />
             </button>
           </div>
         </div>
@@ -37,5 +42,3 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard;
-
-
