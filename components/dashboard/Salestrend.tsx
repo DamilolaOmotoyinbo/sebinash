@@ -26,7 +26,7 @@ const SalesTrend: React.FC = () => {
               <span key={index}>{month}</span>
             ))}
           </div>
-          <div className="absolute top-4 flex flex-col justify-between pl-4 pb-1 h-full text-xs text-neutral-400">
+          <div className="absolute top-4 flex flex-col justify-between pl-4  h-full text-xs text-neutral-400">
             {[400, 300, 200, 150, 100, 50, 10, 0].map((value, index) => (
               <div key={index} className="h-[50px]">
                 {value === 0 ? value : `₦${value}k`}

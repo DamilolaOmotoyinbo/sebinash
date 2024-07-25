@@ -4,7 +4,7 @@ import { table, armchair, chair, bed } from "@/assests/assests";
 
 const ProductionLine: React.FC = () => {
   return (
-    <div className="pl-4 pt-5 pb-4">
+    <div className="pl-4 pt-3 pb-2">
       <p className="font-bold  text-lg">Production line</p>
       <div className="mt-2 rounded-md">
         <div className="flex gap-4 w-[808px]">
