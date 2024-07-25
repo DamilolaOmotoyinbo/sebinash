@@ -4,7 +4,7 @@ import Dashboard from "@/pages/dashboard";
 
 const pages: React.FC = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#FDFAF2" }} >
       <Dashboard/>
     </div>
   );
