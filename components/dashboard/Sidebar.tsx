@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
           <h1 className="text-xl font-bold cursor-pointer">Sebinash</h1>
         </div>
 
-        <div className="ml-auto flex items-center justify-center w-6 h-8 bg-gray-200 rounded-tl-full rounded-bl-full cursor-pointer">
+        <div className="ml-auto flex pr-0 items-center justify-center w-6 h-8 bg-gray-200 rounded-tl-full rounded-bl-full cursor-pointer">
           <Image src={leftarrow} alt="leftarrow" />
         </div>
       </div>
