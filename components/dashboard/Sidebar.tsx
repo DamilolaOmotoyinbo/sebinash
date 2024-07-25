@@ -40,34 +40,34 @@ const Sidebar: React.FC = () => {
           <p className="text-neutral-400 text-sm">Production line</p>
         </div>
 
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={orders} alt="line" />
           <p className="text-neutral-400 text-sm">Orders</p>
         </div>
 
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={fabrics} alt="line" />
           <p className="text-neutral-400 text-sm">Fabrics</p>
         </div>
 
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={inventory} alt="line" />
           <p className="text-neutral-400 text-sm">Inventory</p>
         </div>
 
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={supply} alt="line" />
           <p className="text-neutral-400 text-sm">Supply</p>
         </div>
       </div>
       <hr />
       <div className="mt-6">
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={settings} alt="settings" />
           <p className="text-neutral-400 text-sm">Settings</p>
         </div>
 
-        <div className="flex gap-2 items-center mb-6 cursor-pointer">
+        <div className="flex gap-2 hover:bg-gray-200 hover:border-gray-400 hover:border rounded items-center mb-6 cursor-pointer border border-transparent transition-all border-height-48">
           <Image className="ml-2" src={tutorial} alt="tutorial" />
           <p className="text-neutral-400 text-sm">Tutorial</p>
         </div>
