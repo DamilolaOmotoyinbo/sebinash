@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import {
@@ -27,15 +27,17 @@ const Sidebar: React.FC = () => {
   return (
     <div
       className={`bg-white h-[861px] shadow-md transition-all duration-300 ${
-        isOpen ? "w-[252px] p-[32px]" : "w-[80px] p-[16px]"
+        isOpen ? " p-[32px]" : "w-[80px] p-[16px]"
       }`}
     >
       <div className="mb-8 flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <Image src={logo} alt="logo" />
-          {isOpen && <h1 className="text-xl font-bold cursor-pointer">Sebinash</h1>}
+          {isOpen && (
+            <h1 className="text-xl font-bold cursor-pointer">Sebinash</h1>
+          )}
         </div>
-       
+
         <div
           className="ml-auto flex items-center justify-center w-6 h-8 bg-gray-200 rounded-tl-full rounded-bl-full cursor-pointer"
           onClick={toggleSidebar}
@@ -51,7 +53,9 @@ const Sidebar: React.FC = () => {
 
         <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={line} alt="line" />
-          {isOpen && <p className="text-neutral-400 text-sm">Production line</p>}
+          {isOpen && (
+            <p className="text-neutral-400 text-sm">Production line</p>
+          )}
         </div>
 
         <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
@@ -88,27 +92,26 @@ const Sidebar: React.FC = () => {
       </div>
 
       <div className="border w-[188px] h-[136px]  bg-yellow-50 rounded-md cursor-pointer">
-            <p className="font-bold pl-4 mt-3 mb-3">Messages</p>
-             <div>
-               <Image className="ml-4" src={message} alt="line" />
-               <button className="bg-yellow-400 w-[147px] justify-center rounded-md h-[32px] mt-2 mb-2 ml-4 items-center flex">
-                 <p className="text-white text-sm">Open messages</p>
-                 <Image className="ml-2" src={rightarrow} alt="rightarrow" />
-              </button>
-             </div>
-           </div>
+        <p className="font-bold pl-4 mt-3 mb-3">Messages</p>
+        <div>
+          <Image className="ml-4" src={message} alt="line" />
+          <button className="bg-yellow-400 w-[147px] justify-center rounded-md h-[32px] mt-2 mb-2 ml-4 items-center flex">
+            <p className="text-white text-sm">Open messages</p>
+            <Image className="ml-2" src={rightarrow} alt="rightarrow" />
+          </button>
+        </div>
+      </div>
       <div className="flex items-center gap-2 mt-8 bg-gray-50 rounded-md cursor-pointer p-2">
         <div className="bg-gray-200 rounded-full p-4">
           <Image src={user} alt="user" />
         </div>
-        
-          <div className="flex flex-col text-xs font-bold">
-            <p>Ajani Abel-Cain</p>
-            <p className="text-teal-900 bg-teal-50 rounded-lg text-center w-[54px] h-[24px]">
-              online
-            </p>
-          </div>
-      
+
+        <div className="flex flex-col text-xs font-bold">
+          <p>Ajani Abel-Cain</p>
+          <p className="text-teal-900 bg-teal-50 rounded-lg text-center w-[54px] h-[24px]">
+            online
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -117,4 +120,7 @@ const Sidebar: React.FC = () => {
 export default Sidebar;
 
 
+{/* <p className={`text-teal-900 bg-teal-50 rounded-lg ${isOpen ? 'Block':"hidden"} text-center w-[54px] h-[24px]`}></p> */}
 
+
+// {isOpen ? <img src=“big screen”/> : <img src =“small”/> }

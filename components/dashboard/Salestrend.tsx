@@ -4,7 +4,7 @@ import { graph } from "@/assests/assests";
 
 const SalesTrend: React.FC = () => {
   return (
-    <div className="flex gap-3">
+    <div className=" flex gap-3">
       <div className="relative bg-white ml-5 w-[802px] h-[400px]">
         <div className="">
           <Image className="pl-16 " src={graph} alt="graph" layout="fill" />

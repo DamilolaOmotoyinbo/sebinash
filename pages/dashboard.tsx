@@ -11,20 +11,22 @@ const Dashboard: React.FC = () => {
   return (
     <div
       style={{ backgroundColor: "#FDFAF2" }}
-      className="flex flex-col lg:flex-row h-auto min-h-screen"
+      className="flex flex-col lg:flex-row max-w-[1440px] m-auto h-auto min-h-screen"
     >
-      <div className="hidden md:block">
+      <div className=" hidden md:block">
         <Sidebar />
       </div>
       <div className="flex-1">
-        <Navbar />
-        <div className="flex flex-col md:flex-row mt-6">
+        
+      <Navbar />
+      
+        <div className="flex gap-5 mt-5 flex-col md:flex-row">
           <div className="flex-1 order-2 md:order-1">
             <SalesTrend />
             <ProductionLine />
             <RecentOrders />
           </div>
-          <div className="relative p-0 h-80 md:h-[727px] order-1 md:order-2">
+          <div className=" relative p-0 h-80 md:h-[727px] order-1 md:order-2">
             <Image
               className="w-full h-full object-cover"
               src={canvas}
