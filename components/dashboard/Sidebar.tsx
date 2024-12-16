@@ -60,41 +60,41 @@ const Sidebar: React.FC = () => {
           {isOpen && <p className="text-white text-sm">Dashboard</p>}
         </button>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={line} alt="line" />
           {isOpen && (
             <p className="text-neutral-400 text-sm">Production line</p>
           )}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={orders} alt="orders" />
           {isOpen && <p className="text-neutral-400 text-sm">Orders</p>}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={fabrics} alt="fabrics" />
           {isOpen && <p className="text-neutral-400 text-sm">Fabrics</p>}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={inventory} alt="inventory" />
           {isOpen && <p className="text-neutral-400 text-sm">Inventory</p>}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={supply} alt="supply" />
           {isOpen && <p className="text-neutral-400 text-sm">Supply</p>}
         </div>
       </div>
       <hr />
       <div className="mt-6">
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-6 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={settings} alt="settings" />
           {isOpen && <p className="text-neutral-400 text-sm">Settings</p>}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 rounded mb-6 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
           <Image className="ml-2" src={tutorial} alt="tutorial" />
           {isOpen && <p className="text-neutral-400 text-sm">Tutorial</p>}
         </div>

@@ -67,7 +67,7 @@ const recentOrdersData = [
 
 const RecentOrders: React.FC = () => {
   return (
-    <div className="pl-4 w-[802px]">
+    <div className="pl-4 w-[802px] mt-4">
       <h2 className="font-bold text-lg mb-0.5">Recent orders</h2>
       <div className="">
         <table className="min-w-full">
