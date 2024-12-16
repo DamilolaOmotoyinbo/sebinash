@@ -74,7 +74,13 @@ const RecentOrders: React.FC = () => {
           <thead>
             <tr>
               <th className="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                <input className="bg-white" type="checkbox" />
+                {/* <input className="bg-white" type="checkbox" /> */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    className="w-4 h-4 border-2 border-black rounded bg-white appearance-none checked:bg-white checked:border-black checked:after:content-[''] checked:after:block checked:after:border-black checked:after:border-r-2 checked:after:border-b-2 checked:after:h-1.5 checked:after:w-1 checked:after:rotate-45 checked:after:translate-x-1 checked:after:translate-y-0.5"
+                  />
+                </div>
               </th>
               <th className="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                 Product
@@ -95,11 +101,21 @@ const RecentOrders: React.FC = () => {
               <React.Fragment key={index}>
                 <tr>
                   <td className="pl-5 bg-white text-sm">
-                    <input type="checkbox" />
+                    {/* <input type="checkbox" /> */}
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        className="w-4 h-4 border-2 border-black rounded bg-white appearance-none checked:bg-white checked:border-black checked:after:content-[''] checked:after:block checked:after:border-black checked:after:border-r-2 checked:after:border-b-2 checked:after:h-1.5 checked:after:w-1 checked:after:rotate-45 checked:after:translate-x-1 checked:after:translate-y-0.5"
+                      />
+                    </div>
                   </td>
                   <td className="bg-white text-sm">
                     <div className="flex items-center">
-                      <Image className="rounded-lg mt-0.5 mb-0.5" src={shelf} alt="shelf" />
+                      <Image
+                        className="rounded-lg mt-0.5 mb-0.5"
+                        src={shelf}
+                        alt="shelf"
+                      />
                       <div className="ml-3 ">
                         <p className="text-gray-900 ">{order.product}</p>
                       </div>

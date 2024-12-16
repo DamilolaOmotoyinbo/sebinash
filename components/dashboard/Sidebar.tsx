@@ -10,12 +10,18 @@ import {
   fabrics,
   inventory,
   supply,
+  side,
   settings,
   tutorial,
   message,
   rightarrow,
   user,
   leftarrow,
+  image1,
+  image2,
+  image3,
+  image4,
+  three,
 } from "@/assests/assests";
 
 const Sidebar: React.FC = () => {
@@ -40,10 +46,12 @@ const Sidebar: React.FC = () => {
         </div>
 
         <div
-          className={`ml-auto flex items-center justify-center w-6 h-8 bg-gray-200 relative ${isOpen ? "-right-8":"-right-4"} rounded-tl-full rounded-bl-full cursor-pointer`}
+          className={`ml-auto flex items-center justify-center w-6 h-8 bg-gray-200 relative ${
+            isOpen ? "-right-8" : "-right-4"
+          } rounded-tl-full rounded-bl-full cursor-pointer`}
           onClick={toggleSidebar}
         >
-          <Image src={isOpen ? leftarrow : rightarrow} alt="toggle arrow" />
+          <Image src={isOpen ? leftarrow : side} alt="toggle arrow" />
         </div>
       </div>
       <div className="pb-4">
@@ -100,11 +108,27 @@ const Sidebar: React.FC = () => {
             !isOpen && "flex-col gap-2"
           }`}
         >
-          {/* <Image className="" src={message} alt="line" /> */}
-          <div className="w-8 h-8 rounded-full bg-red-700"></div>
-          <div className="w-8 h-8 rounded-full bg-red-700"></div>
-          {isOpen && <div className="w-8 h-8 rounded-full bg-red-700"></div>}
-          {isOpen && <div className="w-8 h-8 rounded-full bg-red-700"></div>}
+          <div className="w-8 h-8 relative">
+            <Image className="rounded-full" src={image1} alt="image1" />
+            <div className="bottom-0 right-0 absolute"><Image className="" src={three} alt="three" /></div>
+          </div>
+          <div className="w-8 h-8 relative">
+            <Image className="rounded-full" src={image2} alt="image2" />
+            <div className="bottom-0 right-0 absolute"><Image className="" src={three} alt="three" /></div>
+          </div>
+
+          {isOpen && (
+            <div className="w-8 h-8 relative">
+              <Image className="rounded-full" src={image3} alt="image3" />
+              <div className="bottom-0 right-0 absolute"><Image className="" src={three} alt="three" /></div>
+            </div>
+          )}
+          {isOpen && (
+            <div className="w-8 h-8 relative">
+              <Image className="rounded-full" src={image4} alt="image4" />
+              <div className="bottom-0 right-0 absolute"><Image className="" src={three} alt="three" /></div>
+            </div>
+          )}
         </div>
         <button className="bg-yellow-400 justify-center text-white rounded-md h-8 gap-2 items-center flex">
           {isOpen && <p className=" text-xs">Open messages</p>}
@@ -145,9 +169,3 @@ const Sidebar: React.FC = () => {
 };
 
 export default Sidebar;
-
-{
-  /* <p className={`text-teal-900 bg-teal-50 rounded-lg ${isOpen ? 'Block':"hidden"} text-center w-[54px] h-[24px]`}></p> */
-}
-
-// {isOpen ? <img src=“big screen”/> : <img src =“small”/> }
