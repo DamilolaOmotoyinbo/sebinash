@@ -33,11 +33,11 @@ const Sidebar: React.FC = () => {
 
   return (
     <div
-      className={`bg-white h-[861px] shadow-md transition-all duration-300 ${
+      className={`bg-white h-[880px] shadow-md transition-all duration-300 ${
         isOpen ? "w-64 p-8" : "w-24 px-4 py-8"
       }`}
     >
-      <div className="mb-8 flex justify-between items-center">
+      <div className="mb-6 flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <Image src={logo} alt="logo" />
           {isOpen && (
@@ -94,13 +94,13 @@ const Sidebar: React.FC = () => {
           {isOpen && <p className="text-neutral-400 text-sm">Settings</p>}
         </div>
 
-        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-5 cursor-pointer p-2">
+        <div className="flex gap-2 items-center hover:bg-gray-200 h-[48px] rounded-lg mb-3 cursor-pointer p-2">
           <Image className="ml-2" src={tutorial} alt="tutorial" />
           {isOpen && <p className="text-neutral-400 text-sm">Tutorial</p>}
         </div>
       </div>
 
-      <div className="flex flex-col gap-3 border w-full py-3 px-4 h-fit bg-yellow-50 rounded-md cursor-pointer">
+      <div className="flex flex-col gap-2 border w-full py-3 px-4 h-fit bg-yellow-50 rounded-md cursor-pointer">
         {isOpen && <p className="font-bold">Messages</p>}
 
         <div
@@ -135,9 +135,8 @@ const Sidebar: React.FC = () => {
           <MdKeyboardDoubleArrowRight size={16} />
         </button>
       </div>
-      <div className="flex items-center gap-2 mt-8 bg-gray-50 rounded-md cursor-pointer py-2 px-3">
+      <div className="flex items-center gap-2 mt-4 bg-gray-50 rounded-md cursor-pointer py-2 px-3">
         <div className="bg-gray-200 rounded-full grid place-items-center w-10 h-10">
-          {/* <Image src={user} alt="user" /> */}
           <svg
             width="13"
             height="14"
